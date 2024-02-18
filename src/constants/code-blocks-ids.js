@@ -1,0 +1,6 @@
+export default {
+  ASYNC: 1,
+  CONDITIONAL_RENDERING: 2,
+  STATE_MANAGEMENT: 3,
+  LIST_RENDERING: 4,
+};
