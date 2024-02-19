@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 
 import CodeBlocksServices from "../../services/code-blocks-services";
 
-import "highlight.js/styles/default.css";
 import * as Styles from "./code-block-view-component-styles";
 
 export default function CodeBlockViewComponent(props) {
