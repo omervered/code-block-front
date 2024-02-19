@@ -17,7 +17,7 @@ export const CodeBlockWrapper = styled.div`
 
   border-radius: 10px;
   box-shadow: 2px 4px 8px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -33,6 +33,7 @@ export default function CodeBlockViewComponent(props) {
   const displayName = CodeBlockService.displayName();
   const learnMoreUrl = CodeBlockService.learnMoreUrl();
   const instructions = CodeBlockService.instructions();
+  const backgroundColor = CodeBlockService.BackgroundColor();
 
   return (
     <Styles.CodeBlockView>
@@ -47,7 +48,7 @@ export default function CodeBlockViewComponent(props) {
           Back
         </Styles.Link>
       </Styles.ButtonWrapper>
-      <Styles.CodeBlockWrapper>
+      <Styles.CodeBlockWrapper style={{ backgroundColor }}>
         <MonacoEditor
           language="javascript"
           theme="vs-dark"
