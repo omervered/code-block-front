@@ -14,10 +14,33 @@ export default class BaseCodeBlockService {
   }
 
   static learnMoreUrl() {
-    return "https://react.dev/learn/async-code-blocks";
+    return "https://docs.react-async.com/";
+  }
+
+  static BackgroundColor() {
+    return "#FFD700";
   }
 
   static instructions() {
-    return "To fetch data asynchronously in your application, use the `useEffect` hook to run a function that fetches data from an API. Then, use the `useState` hook to store the data and update the UI.";
+    return (
+      "//Exercise:\n" +
+      "//Transform the provided function `fetchData` into an async function using `async/await`.\n// Don't forget to handle errors.\n\n" +
+      "//Function to Transform:\n\n" +
+      "function fetchData() {\n" +
+      "  return fetch('https://api.example.com/data')\n" +
+      "    .then(response => {\n" +
+      "      if (!response.ok) {\n" +
+      "        throw new Error('Network response was not ok');\n" +
+      "      }\n" +
+      "      return response.json();\n" +
+      "    })\n" +
+      "    .then(data => data)\n" +
+      "    .catch(error => {\n" +
+      "      console.error('Error fetching data:', error);\n" +
+      "      throw error;\n" +
+      "    });\n" +
+      "}\n" +
+      "//Write your solution below:\n\n"
+    );
   }
 }

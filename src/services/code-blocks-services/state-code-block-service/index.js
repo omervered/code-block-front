@@ -1,8 +1,9 @@
+import codeBlocksIds from "../../../constants/code-blocks-ids";
 import BaseCodeBlockService from "../base-code-block-service";
 
 export default class StateCodeBlockService extends BaseCodeBlockService {
   static id() {
-    return 3;
+    return codeBlocksIds.STATE_MANAGEMENT;
   }
 
   static displayName() {
@@ -14,10 +15,22 @@ export default class StateCodeBlockService extends BaseCodeBlockService {
   }
 
   static learnMoreUrl() {
-    return "https://react.dev/learn/state-management";
+    return "https://react.dev/learn/managing-state";
+  }
+
+  static BackgroundColor() {
+    return "#FFC0CB";
   }
 
   static instructions() {
-    return "To manage state in your application, use the `useState` hook to create a state variable and a function to update it. Then, use the state variable to update the UI based on user interactions.";
+    return (
+      "// Exercise:\n" +
+      "// Modify the `toggleState` function to toggle the value of `isOn` between true and false when called.\n\n" +
+      "// Function to Modify:\n\n" +
+      "function toggleState(isOn) {\n" +
+      "  return !isOn;\n" +
+      "}\n\n" +
+      "// Write your solution below:\n"
+    );
   }
 }

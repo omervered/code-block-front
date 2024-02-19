@@ -1,8 +1,9 @@
+import codeBlocksIds from "../../../constants/code-blocks-ids";
 import BaseCodeBlockService from "../base-code-block-service";
 
 export default class ListRenderingCodeBlockService extends BaseCodeBlockService {
   static id() {
-    return 4;
+    return codeBlocksIds.LIST_RENDERING;
   }
 
   static displayName() {
@@ -17,7 +18,25 @@ export default class ListRenderingCodeBlockService extends BaseCodeBlockService 
     return "https://react.dev/learn/rendering-lists";
   }
 
+  static BackgroundColor() {
+    return "#ADD8E6";
+  }
+
   static instructions() {
-    return "To render a list of items, use the `map` method to iterate over the list and return a new array of elements. Then, use the new array of elements to update the UI.";
+    return (
+      "// Exercise:\n" +
+      "// Transform the `renderList` function to map over the `items` array and render each item as an <li> element.\n\n" +
+      "// Function to Transform:\n\n" +
+      "function renderList(items) {\n" +
+      "  return (\n" +
+      "    <ul>\n" +
+      "      {items.map(item => (\n" +
+      "        <li key={item.id}>{item.name}</li>\n" +
+      "      ))}\n" +
+      "    </ul>\n" +
+      "  );\n" +
+      "}\n" +
+      "// Write your solution below:\n\n"
+    );
   }
 }

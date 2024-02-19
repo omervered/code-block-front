@@ -15,6 +15,10 @@ export default class BaseCodeBlockService {
     return null;
   }
 
+  static BackgroundColor() {
+    return null;
+  }
+
   static instructions() {
     return null;
   }

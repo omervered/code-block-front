@@ -24,7 +24,7 @@ export const CodeBlockCardWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 24px;
-  background-color: ${colors["alice-blue"]};
+  /* background-color: ${colors["alice-blue"]}; */
   border: 1px solid rgb(224, 226, 235);
   border-radius: 8px;
   margin-top: 20px;
@@ -61,7 +61,7 @@ export const CodeBlockLink = styled(Link)`
   transition: background-color 0.5s ease;
 
   &:hover {
-    background-color: ${colors["eerie-black"]};
     color: #fff;
+    transition: background-color 0.5s ease;
   }
 `;

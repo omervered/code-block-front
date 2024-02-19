@@ -12,7 +12,7 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 2.4rem;
-  color: ${colors["eerie-black"]};
+  font-size: 2rem;
+  color: ${colors["american-blue"]};
   margin-left: 2rem;
 `;

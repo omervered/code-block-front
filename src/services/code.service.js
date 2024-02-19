@@ -13,12 +13,12 @@ async function query() {
   return httpService.get(BASE_URL);
 }
 
-async function getById(id) {
-  return httpService.get(`${BASE_URL}/${id}`);
+async function getById(codeBlockId) {
+  return httpService.get(`${BASE_URL}${codeBlockId}`);
 }
 
-async function remove(id) {
-  return httpService.delete(`${BASE_URL}/${id}`);
+async function remove(codeBlockId) {
+  return httpService.delete(`${BASE_URL}/${codeBlockId}`);
 }
 
 async function save(codeBlock) {

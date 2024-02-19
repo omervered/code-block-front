@@ -1,4 +1,5 @@
-import { Route, HashRouter as Router, Routes } from "react-router-dom";
+// import { Route, HashRouter as Router, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { CodeBlocksViewComponent } from "./pages/code-blocks-view-component/code-blocks-view-component";
 import { AppHeaderComponent } from "./cmps/app-header-component/app-header-component";

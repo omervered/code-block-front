@@ -13,8 +13,17 @@ export function CodeBlocksViewComponent() {
       const displayName = CodeBlockService.displayName();
       const description = CodeBlockService.description();
       const learnMoreUrl = CodeBlockService.learnMoreUrl();
+      const backgroundColor = CodeBlockService.BackgroundColor();
 
-      return <CodeBlockCardComponent key={id} id={id} title={displayName} description={description} />;
+      return (
+        <CodeBlockCardComponent
+          key={id}
+          id={id}
+          title={displayName}
+          description={description}
+          backgroundColor={backgroundColor}
+        />
+      );
     });
   };
 

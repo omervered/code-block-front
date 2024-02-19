@@ -1,8 +1,9 @@
+import codeBlocksIds from "../../../constants/code-blocks-ids";
 import BaseCodeBlockService from "../base-code-block-service";
 
 export default class ConditionalRenderingCodeBlockService extends BaseCodeBlockService {
   static id() {
-    return 2;
+    return codeBlocksIds.CONDITIONAL_RENDERING;
   }
 
   static displayName() {
@@ -17,7 +18,23 @@ export default class ConditionalRenderingCodeBlockService extends BaseCodeBlockS
     return "https://react.dev/learn/conditional-rendering";
   }
 
+  static BackgroundColor() {
+    return "#98FB98";
+  }
+
   static instructions() {
-    return "To conditionally render content, use the `if` statement or the `ternary operator` to check a condition and return the content based on the result. Then, use the returned content to update the UI.";
+    return (
+      "// Exercise:\n" +
+      "// Modify the `renderContent` function to conditionally render content based on the value of `isLoggedIn`. If `isLoggedIn` is true, render a welcome message. If not, render a login prompt.\n\n" +
+      "// Function to Modify:\n\n" +
+      "function renderContent(isLoggedIn) {\n" +
+      "  if (isLoggedIn) {\n" +
+      "    return <h1>Welcome!</h1>;\n" +
+      "  } else {\n" +
+      "    return <button>Login</button>;\n" +
+      "  }\n" +
+      "}\n" +
+      "// Write your solution below:\n\n"
+    );
   }
 }
