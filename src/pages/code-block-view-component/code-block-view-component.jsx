@@ -7,6 +7,7 @@ import { socketService, SOCKET_ADD_CODE, SOCKET_SEND_CODE } from "../../services
 import { codeService } from "../../services/code.service";
 
 import * as Styles from "./code-block-view-component-styles";
+import { showSuccessMsg } from "../../services/event-bus.service";
 
 export default function CodeBlockViewComponent() {
   const { id } = useParams();
@@ -22,6 +23,7 @@ export default function CodeBlockViewComponent() {
     const fetchCodeBlockById = async (id) => {
       try {
         const codeBlock = await codeService.getById(id);
+        showSuccessMsg(`Fetched code block Successfully!`);
       } catch (err) {
         console.error(err);
       }
